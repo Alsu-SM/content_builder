@@ -1,0 +1,44 @@
+.root {
+	--padding: 8px 16px;
+	--border-radius: 12px;
+	--border-width: 2px;
+	--border-style: solid;
+	--border-color: var(--color-accent-2-0);
+	--hover-border-color: var(--color-accent-2);
+	--border: var(--border-width) var(--border-style) var(--border-color);
+	--background: transparent;
+	--primary-background: var(--color-accent-2-0);
+	--primary-hover-background: var(--color-accent-3);
+	--hover-background: var(--black-overlay-01);
+	--hover-border: var(--border-width) var(--border-style)
+		var(--hover-border-color);
+	--color: var(--color-white-1);
+	--font-size: 16px;
+	--disabled-opacity: 0.5;
+
+	cursor: pointer;
+	margin: 0;
+
+	padding: var(--padding);
+	border-radius: var(--border-radius);
+	border: var(--border);
+	background: var(--background);
+	color: var(--color);
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+
+	transition: all 0.3s;
+}
+
+.root:disabled {
+	pointer-events: none;
+	opacity: var(--disabled-opacity);
+}
+
+.root:hover {
+	border: var(--hover-border);
+}
+
+.root.primary {
+	background: var(--primary-background);
+}

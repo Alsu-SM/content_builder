@@ -1,0 +1,10 @@
+.root {
+	display: block;
+}
+.drag_active .content {
+	opacity: 0.4;
+}
+
+.content {
+	transition: opacity 0.3s;
+}

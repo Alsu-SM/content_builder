@@ -1,0 +1,14 @@
+.root {
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px dashed var(--color-white-3);
+	box-sizing: border-box;
+	height: 70px;
+	opacity: 0.2;
+	transition: opacity 0.3s;
+}
+
+.root.drag_over {
+	opacity: 1;
+}

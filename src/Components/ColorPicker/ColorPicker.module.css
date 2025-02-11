@@ -1,0 +1,45 @@
+.root {
+	position: relative;
+}
+
+.button {
+	width: 24px;
+	height: 24px;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid var(--color-accent-2-0);
+}
+
+.picker {
+	position: absolute;
+	top: 50px;
+	background: var(--white-overlay-02);
+	padding: 30px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.swatch {
+	flex: 1;
+}
+
+.swatch * {
+	font-family: var(--font-family);
+}
+
+.slider > div {
+	padding-left: 0 !important;
+}

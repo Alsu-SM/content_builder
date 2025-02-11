@@ -1,0 +1,51 @@
+.root {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	border: 2px solid var(--color-accent-2-0);
+	border-radius: 8px;
+	gap: 10px;
+	width: fit-content;
+	opacity: 0.8;
+	height: 32px;
+	box-sizing: border-box;
+}
+
+.root .button {
+	font-family: var(--font-family);
+	background: transparent;
+	outline: none;
+	border: 2px solid transparent;
+	color: var(--color-accent-3);
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.button.button_decrease {
+	border-right-color: var(--color-accent-2-0);
+}
+.button.button_increase {
+	border-left-color: var(--color-accent-2-0);
+}
+
+.value_wrapper {
+	padding: 0 10px;
+	width: 3ch;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-accent-4);
+	font-weight: 800;
+}
+
+.button:disabled {
+	opacity: 0.5;
+}

@@ -1,0 +1,26 @@
+.root.input {
+	font-family: var(--font-family);
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: 2px solid var(--color-accent-2);
+	background: transparent;
+	color: var(--color-black-1);
+	font-weight: 800;
+	outline: none;
+}
+
+.input::placeholder {
+	color: var(--color-black-1);
+	opacity: 0.6;
+}
+
+.root.input::-webkit-outer-spin-button,
+.root.input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+.root.input[type='number'] {
+	-moz-appearance: textfield;
+}

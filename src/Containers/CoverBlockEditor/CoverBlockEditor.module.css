@@ -1,0 +1,158 @@
+.root {
+	width: 100dvw;
+	position: relative;
+	box-sizing: border-box;
+	color: var(--color-white-1);
+	overflow: hidden;
+}
+
+.image {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100%;
+}
+
+.root button.add_text_button {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 10px;
+	border-radius: 50%;
+	--size: 40px;
+	--border-color: var(--color-white-1);
+	--hover-border-color: var(--color-white-1);
+	--icon-color: var(--color-white-1);
+}
+
+.root button.add_text_button:hover {
+	background: var(--white-overlay-01);
+}
+
+.image_edit_button_wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	box-sizing: border-box;
+	background: var(--black-overlay-02);
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.image_edit_button_wrapper .image_edit_button {
+	--border-color: var(--color-white-1);
+	--hover-border-color: var(--color-white-1);
+}
+
+.image_edit_button_wrapper .image_edit_button:hover {
+	background: var(--white-overlay-01);
+}
+
+.root:hover .image_edit_button_wrapper {
+	opacity: 1;
+	pointer-events: unset;
+}
+
+.root .settings_sheet {
+	height: calc(100dvh - var(--page-edit-top-bar-height));
+}
+
+.root .settings_sheet :global([class*='horizontalLeft']) {
+	height: calc(100dvh - var(--page-edit-top-bar-height));
+}
+
+.settings {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	color: var(--color-accent-4);
+	box-sizing: border-box;
+}
+
+.settings_title {
+	font-size: 20px;
+	font-weight: 1000;
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 4px solid var(--color-accent-2-0);
+}
+
+.settings_list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.field_wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.field_wrapper_row {
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.size_field {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.size_field .input {
+	flex: 1;
+}
+.size_field .switcher {
+	width: 100px;
+}
+
+.size_field .switcher button {
+	font-size: 14px;
+	padding: 4px;
+}
+
+.content_wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.color_picker :global([class*='_picker']),
+.background_color_picker :global([class*='_picker']) {
+	right: 0;
+	z-index: 100;
+	backdrop-filter: blur(5px);
+}
+
+.background_color_settings {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.background_preview {
+	width: 100%;
+	height: 300px;
+	border-radius: 4px;
+}
+
+.background_color_settings .background_color_picker {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.background_color_picker button:global([class*='_button']) {
+	opacity: 0.6;
+	border-color: white;
+}

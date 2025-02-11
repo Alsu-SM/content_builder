@@ -1,0 +1,63 @@
+.root {
+	height: 100dvh;
+	width: 100dvw;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+
+	--page-edit-top-bar-height: 50px;
+}
+
+.top_bar {
+	width: 100dvw;
+	height: var(--page-edit-top-bar-height);
+	background: var(--color-accent-1);
+	border-bottom: 5px solid var(--color-accent-2);
+	z-index: 20;
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: var(--color-black-1);
+	overflow: hidden;
+	position: fixed;
+}
+
+.root .sidebar_button,
+.root .sidebar_button:hover {
+	border: none;
+	--icon-color: var(--color-accent-3);
+}
+
+.root .sidebar_button .icon {
+	transform: rotate(180deg);
+}
+
+.root .sidebar_button_open .icon {
+	transform: rotate(0);
+}
+
+.background_pattern {
+	width: 100%;
+	height: 100%;
+	background: url('../../Assets/grain.png') no-repeat;
+	background-size: cover;
+	position: absolute;
+	opacity: 0.05;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.content {
+	flex: 1;
+}
+
+.root .sheet {
+	height: calc(100dvh - var(--page-edit-top-bar-height));
+	bottom: 0;
+}
+
+.root .sheet :global([class*='horizontalRight']) {
+	height: calc(100dvh - var(--page-edit-top-bar-height));
+}

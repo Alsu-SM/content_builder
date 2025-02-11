@@ -1,0 +1,18 @@
+.root {
+	width: 100%;
+	display: flex;
+	gap: 0;
+	box-sizing: border-box;
+}
+
+.root .item {
+	flex: 1;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-radius: 0;
+}
+
+.root .item:hover {
+	background: var(--color-accent-2);
+}

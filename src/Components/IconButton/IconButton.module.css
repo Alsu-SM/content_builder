@@ -1,0 +1,13 @@
+.root.button {
+	--padding: 4px;
+	--border-radius: 8px;
+
+	--size: 32px;
+
+	width: var(--size);
+	height: var(--size);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}

@@ -1,0 +1,73 @@
+.root {
+	position: relative;
+	--resize-color: var(--color-accent-2);
+}
+
+.resizer {
+	position: absolute;
+	background: var(--resize-color);
+}
+
+.resizer_horizontalRight {
+	right: 0;
+	top: 0;
+	width: 5px;
+	height: 100%;
+	cursor: ew-resize;
+}
+
+.resizer_horizontalLeft {
+	left: 0;
+	top: 0;
+	width: 5px;
+	height: 100%;
+	cursor: ew-resize;
+}
+
+.resizer_verticalTop {
+	left: 0;
+	top: 0;
+	height: 5px;
+	width: 100%;
+	cursor: ns-resize;
+}
+
+.resizer_verticalBottom {
+	left: 0;
+	bottom: 0;
+	height: 5px;
+	width: 100%;
+	cursor: ns-resize;
+}
+
+.resizer_topRight {
+	right: 0;
+	top: 0;
+	width: 10px;
+	height: 10px;
+	cursor: nesw-resize;
+}
+
+.resizer_topLeft {
+	left: 0;
+	top: 0;
+	width: 10px;
+	height: 10px;
+	cursor: nwse-resize;
+}
+
+.resizer_bottomRight {
+	right: 0;
+	bottom: 0;
+	width: 10px;
+	height: 10px;
+	cursor: nwse-resize;
+}
+
+.resizer_bottomLeft {
+	left: 0;
+	bottom: 0;
+	width: 10px;
+	height: 10px;
+	cursor: nesw-resize;
+}
